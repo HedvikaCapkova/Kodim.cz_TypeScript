@@ -1,0 +1,20 @@
+//tsconfig pro webpack
+{
+  "compilerOptions": {
+    "target": "es2020", //vsechny prohlížeče by mely podporovat es5, ale 3 roky stará verze by mela byt bezpečná pro většinu prihlizecu
+    "lib": ["es2020", "dom"], //jake typy chci mít dostupné - DOM = typy pro DOM
+    
+    //nastaveni modulu
+    "module": "es2022", //aby fungoval import a export, musi byt alespon es2020 (top-level await je az v es2022)
+    "moduleResolution": "bundler", //jak se pracuje s moduly s pouzitim bundleru
+    "isolatedModules": true, //jak se pracuje s moduly s pouzitim bundleru
+   
+    //nastaveni prisnosti
+    "strict": true, //kontrola typu - zahrnuje dalsi striktni nastaveni 
+    "noImplicitAny": true, //kdyz si TS neumi odvodit typ a bylo by to any => error
+    "noUnusedLocals": true, //nepouzite lokalni promenne
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src/**/*.ts"]
+}

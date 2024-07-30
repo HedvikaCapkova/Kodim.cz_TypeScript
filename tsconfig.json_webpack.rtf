@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1250\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red88\green138\blue67;\red255\green255\blue255;\red193\green193\blue193;
+\red141\green212\blue254;\red194\green126\blue101;\red71\green137\blue205;\red193\green193\blue193;}
+{\*\expandedcolortbl;;\cssrgb\c41525\c59950\c33208;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c80088\c80088\c79988;
+\cssrgb\c61361\c86489\c99746;\cssrgb\c80778\c56830\c46925;\cssrgb\c33936\c61427\c84130;\cssrgb\c80000\c80000\c80000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 //tsconfig pro webpack\cf4 \strokec4 \
+\{\
+  \cf5 \strokec5 "compilerOptions"\cf4 \strokec4 : \{\
+    \cf5 \strokec5 "target"\cf4 \strokec4 : \cf6 \strokec6 "es2020"\cf4 \strokec4 , \cf2 \strokec2 //vsechny prohl\'ed\'9ee\uc0\u269 e by mely podporovat es5, ale 3 roky star\'e1 verze by mela byt bezpe\u269 n\'e1 pro v\u283 t\'9ainu prihlizecu\cf4 \strokec4 \
+    \cf5 \strokec5 "lib"\cf4 \strokec4 : [\cf6 \strokec6 "es2020"\cf4 \strokec4 , \cf6 \strokec6 "dom"\cf4 \strokec4 ], \cf2 \strokec2 //jake typy chci m\'edt dostupn\'e9 - DOM = typy pro DOM\cf4 \strokec4 \
+    \
+    \cf2 \strokec2 //nastaveni modulu\cf4 \strokec4 \
+    \cf5 \strokec5 "module"\cf4 \strokec4 : \cf6 \strokec6 "es2022"\cf4 \strokec4 , \cf2 \strokec2 //aby fungoval import a export, musi byt alespon es2020 (top-level await je az v es2022)\cf4 \strokec4 \
+    \cf5 \strokec5 "moduleResolution"\cf4 \strokec4 : \cf6 \strokec6 "bundler"\cf4 \strokec4 , \cf2 \strokec2 //jak se pracuje s moduly s pouzitim bundleru\cf4 \strokec4 \
+    \cf5 \strokec5 "isolatedModules"\cf4 \strokec4 : \cf7 \strokec7 true\cf4 \strokec4 , \cf2 \strokec2 //jak se pracuje s moduly s pouzitim bundleru\cf4 \strokec4 \
+   \
+    \cf2 \strokec2 //nastaveni prisnosti\cf4 \strokec4 \
+    \cf5 \strokec5 "strict"\cf4 \strokec4 : \cf7 \strokec7 true\cf4 \strokec4 , \cf2 \strokec2 //kontrola typu - zahrnuje dalsi striktni nastaveni \cf4 \strokec4 \
+    \cf5 \strokec5 "noImplicitAny"\cf4 \strokec4 : \cf7 \strokec7 true\cf4 \strokec4 , \cf2 \strokec2 //kdyz si TS neumi odvodit typ a bylo by to any => error\cf4 \strokec4 \
+    \cf5 \strokec5 "noUnusedLocals"\cf4 \strokec4 : \cf7 \strokec7 true\cf4 \strokec4 , \cf2 \strokec2 //nepouzite lokalni promenne\cf4 \strokec4 \
+    \cf5 \strokec5 "noUnusedParameters"\cf4 \strokec4 : \cf7 \strokec7 true\cf4 \strokec4 ,\
+    \cf5 \strokec5 "noFallthroughCasesInSwitch"\cf4 \strokec4 : \cf7 \strokec7 true\cf4 \strokec4 \
+  \},\
+  \cf5 \strokec5 "include"\cf4 \strokec4 : [\cf6 \strokec6 "src/**/*.ts"\cf4 \strokec4 ]\
+\}\cf8 \cb1 \strokec8 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf8 \cb1 \strokec8 \
+}
