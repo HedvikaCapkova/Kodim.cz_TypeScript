@@ -1,18 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
     <title>Diagrams</title>
   </head>
   <body>
     <div class="layout">
       <header class="header">
-        <h1>Název diagramu</h1>  
+        <h1>Název diagramu</h1>
         <div class="label-field">
           <label htmlFor="box-label">Label:</label>
-          <input type="text" id="box-label" disabled />
+          <input
+            type="text"
+            id="box-label"
+            disabled />
         </div>
       </header>
       <svg class="board">
@@ -22,16 +29,14 @@
           x2="250"
           y2="75"
           stroke="white"
-          strokeWidth="2"
-        />
+          strokeWidth="2" />
         <line
           x1="100"
           y1="75"
           x2="100"
           y2="175"
           stroke="white"
-          strokeWidth="2"
-        />
+          strokeWidth="2" />
         <g>
           <rect
             x="50"
@@ -42,15 +47,13 @@
             height="50"
             fill="orange"
             stroke="white"
-            strokeWidth="2"
-          />
+            strokeWidth="2" />
           <text
             class="label"
             x="100"
             y="75"
             text-anchor="middle"
-            alignment-baseline="central"
-          >
+            alignment-baseline="central">
             Box 1
           </text>
         </g>
@@ -64,15 +67,13 @@
             height="50"
             fill="orange"
             stroke="white"
-            strokeWidth="2"
-          />
+            strokeWidth="2" />
           <text
             class="label"
             x="250"
             y="75"
             text-anchor="middle"
-            alignment-baseline="central"
-          >
+            alignment-baseline="central">
             Box 2
           </text>
         </g>
@@ -86,17 +87,16 @@
             height="50"
             fill="orange"
             stroke="white"
-            strokeWidth="2"
-          />
+            strokeWidth="2" />
           <text
             class="label"
             x="100"
             y="175"
             text-anchor="middle"
-            alignment-baseline="central"
-          >
+            alignment-baseline="central">
             Box 3
           </text>
+        </g>
       </svg>
     </div>
   </body>
